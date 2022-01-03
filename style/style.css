@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor0:#d8d7d78c;
+    --cor1:#eea302;
+    --cor2:#ff3b25;
+    --cor3:#80d8da;
+
+    --fonte-subtitulo:'Work Sans', sans-serif;
+    --fonte-titulo:'Work Sans', sans-serif;
+    --fonte-conteudo:'Dosis', sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+    font-size: 100%;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.meu-nome {
+    font-family: var(--fonte-subtitulo);
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    height: 100px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho-menu-item {
+    font-family: var(--fonte-conteudo);
+    color: black;
+    font-weight:bold; 
+    border-left: 0.7px solid black;
+    padding-left: 20px;
+}
+
+.artigo {
+    font-family: var(--fonte-conteudo);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 100px 0px;
+}
+.artigo-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.titulo-principal {
+    font-family: var(--fonte-titulo);
+    font-size: 8em;
+    color: black;
+    margin: 0px 450px 0px 0px;
+    text-indent: 60px;
+}
+.subtitulo-principal {
+    font-family: var(--fonte-subtitulo);
+    font-weight: 300px;
+    text-indent: 80px;
+    color: black;
+    padding:auto;
+}
+
+.paragrafo-principal {
+    font-family: var(--fonte-conteudo);
+    font-weight: 600;
+    text-indent: 20px;
+    color: black;
+    min-width: 280px;
+    max-width: 400px;
+    margin: 10px 200px 10px 40px;
+}
+
+.botao{
+    font-family: var(--fonte-subtitulo);
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: auto;
+}
+.botao:hover{
+    background-color: var(--cor0);
+}
+.um{
+    background-color: var(--cor1);
+    margin: 0px 10px;
+}
+.dois{
+    background-color: var(--cor2);
+    margin: 0px 10px;
+}
+.tres{
+    background-color: var(--cor3);
+    margin: 0px 10px;
+}
+.imagem-principal {
+    margin: auto;
+    text-align: center;
+}
+.config-imagem{
+    border-radius: 50%;
+}
+.rodape{
+    margin-bottom: 40px;
+    padding: 20px;
+    border-top: 0.8px solid black;
+}
+footer > p {
+    font-family: var(--fonte-conteudo);
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom:0px;
+}

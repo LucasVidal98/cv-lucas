@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor0:#d8d7d78c;
+    --cor1:#eea302;
+    --cor2:#ff3b25;
+    --cor3:#80d8da;
+
+    --fonte-subtitulo:'Work Sans', sans-serif;
+    --fonte-titulo:'Work Sans', sans-serif;
+    --fonte-conteudo:'Dosis', sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+    font-size: 100%;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.meu-nome {
+    font-family: var(--fonte-subtitulo);
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    height: 100px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho-menu-item {
+    font-family: var(--fonte-conteudo);
+    color: black;
+    font-weight: 600; 
+    border-left: 0.7px solid black;
+    padding-left: 20px;
+}
+
+.titulo-principal{
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    margin:0px 0px 0px 200px;
+}
+
+.titulo {
+    font-family:var(--fonte-subtitulo); 
+}
+
+.anos {
+    font-family: var(--fonte-conteudo);
+    font-weight: 600;
+    color: black;
+}
+
+.firmas {
+    font-family: var(--fonte-subtitulo);
+    padding: 20px;
+    margin:auto;
+}
+
+.conteudo {
+    font-family: var(--fonte-conteudo);
+    color: black;
+    text-decoration: none;
+}
+
+.secoes {
+    margin: auto;
+    gap: 150px;
+    padding: 100px;
+    margin-top: 100px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.274);
+}
+
+.alinhamentosecao {
+    font-family: var(--fonte-conteudo);
+    color: black;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.rodape{
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.botao{
+    font-family: var(--fonte-subtitulo);
+    font-size: 1em;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.botao:hover{
+    background-color:black;
+    color: white;
+}
+footer > p {
+    font-family: var(--fonte-conteudo);
+    font-size: 1em;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom:0px;
+}
